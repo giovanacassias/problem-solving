@@ -5,4 +5,11 @@ export default class Math {
     if (expo == 1) return n;
     return n * this.potencia(n, expo - 1);
   }
+
+  public fibonacci(n: number): number {
+    if (n == 0) return 0;
+    if (n == 1) return this.fibonacci(n) + this.fibonacci(n);
+    //this.fibonacci(n) + this.fibonacci(n);
+    return this.fibonacci(n - 1);
+  }
 }

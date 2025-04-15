@@ -24,13 +24,17 @@ console.log(gap.gapSum(3, 6));
  */
 
 //EX5
-/* let gapAprimorado = new GapAprimorado();
-console.log(gapAprimorado.gapSum(6, 3)); */
+let gapAprimorado = new GapAprimorado();
+console.log(gapAprimorado.gapSum(3, 6));
 
 //EX6
 /* let fatorial = new Fatorial();
 console.log(fatorial.fatorial(5)); */
 
 //EX7
-let potencia = new Math();
-console.log(potencia.potencia(45, 6));
+let math = new Math();
+//console.log(math.potencia(2, 3));
+//console.log(math.fibonacci(6));
+
+//EX8
+//math.fibonacci(6);

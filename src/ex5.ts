@@ -7,8 +7,9 @@ export default class GapAprimorado {
     if (i > s) {
       return this.gapSum(s, i);
     }
-    if (i > s) {
-      return 0;
+    if (i == s) {
+      i + (i + 1);
+      return i;
     }
     return i + this.gapSum(i + 1, s);
   }

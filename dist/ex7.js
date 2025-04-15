@@ -8,5 +8,13 @@ class Math {
             return n;
         return n * this.potencia(n, expo - 1);
     }
+    fibonacci(n) {
+        if (n == 0)
+            return 0;
+        if (n == 1)
+            return this.fibonacci(n) + this.fibonacci(n);
+        //this.fibonacci(n) + this.fibonacci(n);
+        return this.fibonacci(n - 1);
+    }
 }
 exports.default = Math;
