@@ -9,12 +9,14 @@ class Math {
         return n * this.potencia(n, expo - 1);
     }
     fibonacci(n) {
-        if (n == 0)
-            return 0;
         if (n == 1)
-            return this.fibonacci(n) + this.fibonacci(n);
-        //this.fibonacci(n) + this.fibonacci(n);
-        return this.fibonacci(n - 1);
+            return 0;
+        if (n == 2)
+            return 1;
+        else {
+            //this.fibonacci(n) + this.fibonacci(n);
+            return this.fibonacci(n - 1) + this.fibonacci(n - 2);
+        }
     }
 }
 exports.default = Math;
