@@ -35,7 +35,8 @@ console.log(fatorial.fatorial(5)); */
 let math = new Math();
 //console.log(math.potencia(2, 3));
 //console.log(math.fibonacci(7));
-console.log(math.tribonacci(5));
+//console.log(math.tribonacci(5));
+console.log(math.tetranacci(5));
 
 //EX8
 //math.fibonacci(6);
