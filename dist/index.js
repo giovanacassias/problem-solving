@@ -26,6 +26,7 @@ console.log(fatorial.fatorial(5)); */
 //EX7
 let math = new ex7_1.default();
 //console.log(math.potencia(2, 3));
-console.log(math.fibonacci(7));
+//console.log(math.fibonacci(7));
+console.log(math.tribonacci(5));
 //EX8
 //math.fibonacci(6);
