@@ -3,6 +3,7 @@ import Array from "./ex11";
 import Elemento from "./ex13";
 import Soma from "./ex14";
 import Ocorrencia from "./ex15";
+import Matriz from "./ex16";
 import Counter from "./ex2";
 import CounterAB from "./ex3";
 import Gap from "./ex4";
@@ -64,5 +65,9 @@ console.log(array.maiorElemento()); */
 console.log(soma.somaElementos()); */
 
 //EX15
-let occorencia = new Ocorrencia(5, [2, 4, 5, 5]);
-console.log(occorencia.numeroOcorrencias());
+/* let occorencia = new Ocorrencia(5, [2, 4, 5, 5]);
+console.log(occorencia.numeroOcorrencias()); */
+
+//EX16
+let matriz = new Matriz(1, [2, 5, 9, 25, 99, 44, 100]);
+console.log(matriz.estaOrdenado());
