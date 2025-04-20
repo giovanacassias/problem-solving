@@ -58,7 +58,7 @@ let elemento = new ex13_1.default(20, [3, 87, 14, 3, 66]);
 //console.log(elemento.maiorElemento());
 //EX14
 let soma = new ex14_1.default(1, [5, 5, 2, 3]);
-//console.log(soma.somaElementos());
+console.log(soma.somaElementos());
 //EX15
 let occorencia = new ex15_1.default(5, [2, 4, 5, 5]);
 //console.log(occorencia.numeroOcorrencias());
@@ -70,5 +70,5 @@ let matrizUnidimensional = new ex11_16_1.default(9, [2, 5, 9, 25, 44, 99, 100]);
 /* console.log(matrizUnidimensional.primeiraOcorrencia());
 console.log(matrizUnidimensional.primeiraOcorrenciaOrdenada());
 console.log(matrizUnidimensional.somaElementos());
-console.log(matrizUnidimensional.numeroOcorrencias()); */
-console.log(matrizUnidimensional.estaOrdenado());
+console.log(matrizUnidimensional.numeroOcorrencias());
+console.log(matrizUnidimensional.estaOrdenado());*/

@@ -70,7 +70,7 @@ let elemento = new Elemento(20, [3, 87, 14, 3, 66]);
 
 //EX14
 let soma = new Soma(1, [5, 5, 2, 3]);
-//console.log(soma.somaElementos());
+console.log(soma.somaElementos());
 
 //EX15
 let occorencia = new Ocorrencia(5, [2, 4, 5, 5]);
@@ -78,7 +78,7 @@ let occorencia = new Ocorrencia(5, [2, 4, 5, 5]);
 
 //EX16
 let matriz = new Matriz(1, [2, 5, 9, 25, 99, 44, 100]);
-console.log(matriz.estaOrdenado());
+//console.log(matriz.estaOrdenado());
 
 //EX 11 - 16
 let matrizUnidimensional = new MatrizUnidimensional(
@@ -89,5 +89,5 @@ let matrizUnidimensional = new MatrizUnidimensional(
 /* console.log(matrizUnidimensional.primeiraOcorrencia());
 console.log(matrizUnidimensional.primeiraOcorrenciaOrdenada());
 console.log(matrizUnidimensional.somaElementos());
-console.log(matrizUnidimensional.numeroOcorrencias()); */
-console.log(matrizUnidimensional.estaOrdenado());
+console.log(matrizUnidimensional.numeroOcorrencias());
+console.log(matrizUnidimensional.estaOrdenado());*/
