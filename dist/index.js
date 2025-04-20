@@ -3,8 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex11_1 = __importDefault(require("./ex11"));
-const ex7_1 = __importDefault(require("./ex7"));
+const ex14_1 = __importDefault(require("./ex14"));
 //EX1
 /* let mensagem = new Message();
 mensagem.showMessage(5); */
@@ -25,7 +24,7 @@ console.log(gapAprimorado.gapSum(3, 6)); */
 /* let fatorial = new Fatorial();
 console.log(fatorial.fatorial(5)); */
 //EX7
-let math = new ex7_1.default();
+//let math = new Math();
 //console.log(math.potencia(2, 3));
 //console.log(math.fibonacci(7));
 //console.log(math.tribonacci(5));
@@ -33,9 +32,17 @@ let math = new ex7_1.default();
 //EX8
 //math.fibonacci(6);
 //EX11
-let array = new ex11_1.default(20, [
+/* let array = new Array(
+  20,
+  [
     3, 87, 14, 3, 66, 41, 95, 22, 30, 78, 11, 49, 6, 93, 57, 27, 1, 34, 70, 19,
     88,
-]);
-//console.log(array.primeiraOcorrencia());
-console.log(array.primeiraOcorrenciaOrdenada());
+  ]
+);
+console.log(array.primeiraOcorrenciaOrdenada()); */
+//EX13
+/* let array = new Elemento(20, [3, 87, 14, 3, 66]);
+console.log(array.maiorElemento()); */
+//EX14
+let soma = new ex14_1.default(1, [5, 5, 2, 3]);
+console.log(soma.somaElementos());

@@ -1,4 +1,5 @@
-/* PRIMEIRA OCORRÊNCIA – Dado um inteiro e uma matriz unidimensional de 20 inteiros (convenção para os próximos exercícios), não ordenados, retorne a posição da primeira ocorrência do inteiro na matriz. Caso não haja ocorrência, retorne -1. Use a mesma classe para os próximos exercícios. */
+/* EX 12 - PRIMEIRA OCORRÊNCIA ORDENADO
+Idem ao anterior, mas suponha que a matriz unidimensional esteja ordenada. Preze pela eficiência. */
 
 export default class Array {
   private n: number;
