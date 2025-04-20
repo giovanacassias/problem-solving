@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex14_1 = __importDefault(require("./ex14"));
+const ex15_1 = __importDefault(require("./ex15"));
 //EX1
 /* let mensagem = new Message();
 mensagem.showMessage(5); */
@@ -44,5 +44,8 @@ console.log(array.primeiraOcorrenciaOrdenada()); */
 /* let array = new Elemento(20, [3, 87, 14, 3, 66]);
 console.log(array.maiorElemento()); */
 //EX14
-let soma = new ex14_1.default(1, [5, 5, 2, 3]);
-console.log(soma.somaElementos());
+/* let soma = new Soma(1, [5, 5, 2, 3]);
+console.log(soma.somaElementos()); */
+//EX15
+let occorencia = new ex15_1.default(2, [5, 5, 5, 5]);
+console.log(occorencia.numeroOcorrencias());

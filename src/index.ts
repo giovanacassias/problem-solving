@@ -2,6 +2,7 @@ import Message from "./ex1";
 import Array from "./ex11";
 import Elemento from "./ex13";
 import Soma from "./ex14";
+import Ocorrencia from "./ex15";
 import Counter from "./ex2";
 import CounterAB from "./ex3";
 import Gap from "./ex4";
@@ -59,5 +60,9 @@ console.log(array.primeiraOcorrenciaOrdenada()); */
 console.log(array.maiorElemento()); */
 
 //EX14
-let soma = new Soma(1, [5, 5, 2, 3]);
-console.log(soma.somaElementos());
+/* let soma = new Soma(1, [5, 5, 2, 3]);
+console.log(soma.somaElementos()); */
+
+//EX15
+let occorencia = new Ocorrencia(5, [2, 4, 5, 5]);
+console.log(occorencia.numeroOcorrencias());

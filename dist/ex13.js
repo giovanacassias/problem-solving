@@ -8,17 +8,5 @@ class Elemento {
         this.n = n;
         this.array = array;
     }
-    maiorElemento() {
-        return this.maiorElementoAux(this.array, this.index);
-    }
-    maiorElementoAux(array, index) {
-        if (index == array.length) {
-            return array[index];
-        }
-        if (array[index] > array[index + 1]) {
-            return index;
-        }
-        return this.maiorElementoAux(array, index + 1);
-    }
 }
 exports.default = Elemento;
