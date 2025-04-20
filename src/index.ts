@@ -1,5 +1,6 @@
 import Message from "./ex1";
 import Array from "./ex11";
+import MatrizUnidimensional from "./ex11-16";
 import Elemento from "./ex13";
 import Soma from "./ex14";
 import Ocorrencia from "./ex15";
@@ -77,4 +78,16 @@ let occorencia = new Ocorrencia(5, [2, 4, 5, 5]);
 
 //EX16
 let matriz = new Matriz(1, [2, 5, 9, 25, 99, 44, 100]);
-//console.log(matriz.estaOrdenado());
+console.log(matriz.estaOrdenado());
+
+//EX 11 - 16
+let matrizUnidimensional = new MatrizUnidimensional(
+  9,
+  [2, 5, 9, 25, 44, 99, 100]
+);
+
+/* console.log(matrizUnidimensional.primeiraOcorrencia());
+console.log(matrizUnidimensional.primeiraOcorrenciaOrdenada());
+console.log(matrizUnidimensional.somaElementos());
+console.log(matrizUnidimensional.numeroOcorrencias()); */
+console.log(matrizUnidimensional.estaOrdenado());

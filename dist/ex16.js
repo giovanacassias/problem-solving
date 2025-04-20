@@ -13,19 +13,18 @@ class Matriz {
     estaOrdenado() {
         let res = this.estaOrdenadoAux(this.array, this.index);
         if (res == 0) {
-            console.log(`A matriz está ordenada`);
+            console.log(`A matriz NÃO está ordenada`);
         }
         else if (res == 1) {
-            console.log(`A matriz NÃO está ordenada`);
+            console.log(`A matriz está ordenada`);
         }
         return res;
     }
     estaOrdenadoAux(array, index) {
-        console.log(array[index]);
         if (index == array.length)
-            return 0;
-        if (array[index] > array[index + 1])
             return 1;
+        if (array[index] > array[index + 1])
+            return 0;
         return this.estaOrdenadoAux(array, index + 1);
     }
 }

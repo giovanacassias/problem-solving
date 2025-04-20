@@ -17,16 +17,16 @@ export default class Matriz {
   public estaOrdenado(): number {
     let res = this.estaOrdenadoAux(this.array, this.index);
     if (res == 0) {
-      console.log(`A matriz está ordenada`);
-    } else if (res == 1) {
       console.log(`A matriz NÃO está ordenada`);
+    } else if (res == 1) {
+      console.log(`A matriz está ordenada`);
     }
     return res;
   }
 
   private estaOrdenadoAux(array: number[], index: number): number {
-    if (index == array.length) return 0;
-    if (array[index] > array[index + 1]) return 1;
+    if (index == array.length) return 1;
+    if (array[index] > array[index + 1]) return 0;
     return this.estaOrdenadoAux(array, index + 1);
   }
 }
