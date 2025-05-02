@@ -1,0 +1,11 @@
+{
+  "name": "lista-res",
+  "version": "1.0.0",
+  "description": "This repository contains all the exercises that have been done as part of the \"Problem Solving\" course in the 4th semester of the TSI program. The topics covered include:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

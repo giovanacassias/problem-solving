@@ -4,7 +4,7 @@ This repository contains all the exercises that have been done as part of the "P
 
 - Programming fundamentals
 - Recursion
-- Coordinate-based search algorithms
+- Sorting and searching methods
 - Linear data structures
 - Graph theory
 - Hierarchical data structures
