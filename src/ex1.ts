@@ -32,4 +32,17 @@ export default class Inteiros {
     }
     return arr;
   }
+
+  public maior(): number {
+    let arr: number[] = [this.a, this.b, this.c],
+      maior: number = arr[0];
+
+    if (arr[1] > arr[0]) {
+      maior = arr[1];
+    }
+    if (arr[2] > maior) {
+      maior = arr[2];
+    }
+    return maior;
+  }
 }

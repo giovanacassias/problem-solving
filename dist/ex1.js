@@ -26,5 +26,15 @@ class Inteiros {
         }
         return arr;
     }
+    maior() {
+        let arr = [this.a, this.b, this.c], maior = arr[0];
+        if (arr[1] > arr[0]) {
+            maior = arr[1];
+        }
+        if (arr[2] > maior) {
+            maior = arr[2];
+        }
+        return maior;
+    }
 }
 exports.default = Inteiros;
