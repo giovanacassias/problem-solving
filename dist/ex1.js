@@ -1,14 +1,24 @@
 "use strict";
-//EXERCÍCIO 1 - MENSAGEM
-//Implemente um método que exiba n vezes uma mensagem na tela
+//EXERCÍCIO 1
 Object.defineProperty(exports, "__esModule", { value: true });
-class Message {
-    showMessage(n) {
-        if (n == 0) {
-            return;
+class Inteiros {
+    constructor(a, b, c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    ordenar() {
+        let array = [this.a, this.b, this.c];
+        if (this.a > this.b) {
+            array[(this.b, this.a, this.c)];
         }
-        console.log("Hello");
-        return this.showMessage(n - 1);
+        if (this.a > this.c) {
+            array[(this.b, this.c, this.a)];
+        }
+        if (this.c > this.b) {
+            array[(this.c, this.a, this.b)];
+        }
+        return array;
     }
 }
-exports.default = Message;
+exports.default = Inteiros;
