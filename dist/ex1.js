@@ -1,5 +1,5 @@
 "use strict";
-//EXERCÍCIO 1
+//EXERCÍCIO 1 ORDENAR TRÊS
 Object.defineProperty(exports, "__esModule", { value: true });
 class Inteiros {
     constructor(a, b, c) {
@@ -8,17 +8,23 @@ class Inteiros {
         this.c = c;
     }
     ordenar() {
-        let array = [this.a, this.b, this.c];
-        if (this.a > this.b) {
-            array[(this.b, this.a, this.c)];
+        let arr = [this.a, this.b, this.c], temp = 0;
+        if (arr[0] > arr[1]) {
+            temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
         }
-        if (this.a > this.c) {
-            array[(this.b, this.c, this.a)];
+        if (arr[1] > arr[2]) {
+            temp = arr[1];
+            arr[1] = arr[2];
+            arr[2] = temp;
         }
-        if (this.c > this.b) {
-            array[(this.c, this.a, this.b)];
+        if (arr[0] > arr[1]) {
+            temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
         }
-        return array;
+        return arr;
     }
 }
 exports.default = Inteiros;
