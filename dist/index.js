@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex1_1 = __importDefault(require("./ex1"));
+const ex3_1 = __importDefault(require("./ex3"));
 //EX1
 /* let inteiros1 = new Inteiros(2, 4, 6);
 console.log(inteiros1.ordenar());
@@ -25,5 +25,18 @@ console.log(inteiros6.ordenar());
 
 let inteiros7 = new Inteiros(2, 2, 1);
 console.log(inteiros7.ordenar()); */
-let maior1 = new ex1_1.default(1, 5, 33);
-console.log(maior1.maior());
+/* let maior1 = new Inteiros(1, 5, 33);
+console.log(maior1.maior()); */
+//EX2
+//bubble sort
+/* let bubble1 = new Baralho([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
+console.log(bubble1.bubbleSort());
+
+let bubble2 = new Baralho([10, 1, 9, 2, 8, 3, 7, 4, 6, 5]);
+console.log(bubble2.bubbleSort());
+
+let bubble3 = new Baralho([4, 5, 6, 1, 2, 3, 7, 8, 9, 10]);
+console.log(bubble3.bubbleSort()); */
+//selection sort
+let sort1 = new ex3_1.default([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
+console.log(sort1.selectionSort());
