@@ -7,6 +7,7 @@ class Inteiros {
         this.b = b;
         this.c = c;
     }
+    //EX1
     ordenar() {
         let arr = [this.a, this.b, this.c], temp = 0;
         if (arr[0] > arr[1]) {
@@ -26,6 +27,7 @@ class Inteiros {
         }
         return arr;
     }
+    //EX2
     maior() {
         let arr = [this.a, this.b, this.c], maior = arr[0];
         if (arr[1] > arr[0]) {

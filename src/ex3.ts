@@ -58,4 +58,35 @@ export default class Baralho {
     console.log(`O número de trocas foi de: ${swaps}`);
     return arr;
   }
+
+  public insertionSort(): number[] {
+    let arr: number[] = this.arr,
+      len: number = this.arr.length,
+      comp: number = 0,
+      swaps: number = 0;
+
+    for (let i = 1; i < len; i++) {
+      let currentElement = arr[i];
+      let j = i - 1;
+
+      while (true) {
+        comp++;
+        if (j >= 0 && arr[j] > currentElement) {
+          arr[j + 1] = arr[j];
+          j--;
+          swaps++;
+        } else {
+          break;
+        }
+      }
+
+      arr[j + 1] = currentElement;
+      swaps++;
+    }
+
+    console.log(
+      `Esse algoritmo gerou ${swaps} trocas e ${comp} comparações entre os elementos`
+    );
+    return arr;
+  }
 }

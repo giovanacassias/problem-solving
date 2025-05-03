@@ -11,6 +11,7 @@ export default class Inteiros {
     this.c = c;
   }
 
+  //EX1
   public ordenar(): number[] {
     let arr: number[] = [this.a, this.b, this.c],
       temp: number = 0;
@@ -33,6 +34,7 @@ export default class Inteiros {
     return arr;
   }
 
+  //EX2
   public maior(): number {
     let arr: number[] = [this.a, this.b, this.c],
       maior: number = arr[0];
