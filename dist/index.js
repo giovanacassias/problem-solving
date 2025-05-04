@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex3_1 = __importDefault(require("./ex3"));
+const ex4_1 = __importDefault(require("./ex4"));
 //EX1
 //ordenar()
 /* let inteiros1 = new Inteiros(2, 4, 6);
@@ -49,9 +49,19 @@ console.log(sort2.selectionSort());
 let sort3 = new Baralho([4, 5, 6, 1, 2, 3, 7, 8, 9, 10]);
 console.log(sort3.selectionSort()); */
 //insertionSort()
-let insertion1 = new ex3_1.default([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
+/* let insertion1 = new Baralho([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
 console.log(insertion1.insertionSort());
-let insertion2 = new ex3_1.default([10, 1, 9, 2, 8, 3, 7, 4, 6, 5]);
+
+let insertion2 = new Baralho([10, 1, 9, 2, 8, 3, 7, 4, 6, 5]);
 console.log(insertion2.insertionSort());
-let insertion3 = new ex3_1.default([4, 5, 6, 1, 2, 3, 7, 8, 9, 10]);
-console.log(insertion3.insertionSort());
+
+let insertion3 = new Baralho([4, 5, 6, 1, 2, 3, 7, 8, 9, 10]);
+console.log(insertion3.insertionSort()); */
+//EX4
+/* let crescente1 = new Crescente();
+console.log(crescente1);
+ */
+let crescente2 = new ex4_1.default([
+    1, 4, 5, 12, 17, 22, 29, 33, 35, 40, 45, 50, 56, 60, 68, 72, 75, 84, 90, 91,
+]);
+console.log(crescente2.isOrdenado());

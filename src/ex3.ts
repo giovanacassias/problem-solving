@@ -33,8 +33,8 @@ export default class Baralho {
   }
 
   public selectionSort(): number[] {
-    let arr = this.arr,
-      length = this.arr.length,
+    let arr: number[] = this.arr,
+      length: number = this.arr.length,
       comp: number = 0,
       swaps: number = 0;
 

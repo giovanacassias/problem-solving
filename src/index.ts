@@ -1,5 +1,6 @@
 import Inteiros from "./ex1";
 import Baralho from "./ex3";
+import Crescente from "./ex4";
 
 //EX1
 
@@ -54,11 +55,20 @@ let sort3 = new Baralho([4, 5, 6, 1, 2, 3, 7, 8, 9, 10]);
 console.log(sort3.selectionSort()); */
 
 //insertionSort()
-let insertion1 = new Baralho([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
+/* let insertion1 = new Baralho([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
 console.log(insertion1.insertionSort());
 
 let insertion2 = new Baralho([10, 1, 9, 2, 8, 3, 7, 4, 6, 5]);
 console.log(insertion2.insertionSort());
 
 let insertion3 = new Baralho([4, 5, 6, 1, 2, 3, 7, 8, 9, 10]);
-console.log(insertion3.insertionSort());
+console.log(insertion3.insertionSort()); */
+
+//EX4
+/* let crescente1 = new Crescente();
+console.log(crescente1);
+ */
+let crescente2 = new Crescente([
+  1, 4, 5, 12, 17, 22, 29, 33, 35, 40, 45, 50, 56, 60, 68, 72, 75, 84, 90, 91,
+]);
+console.log(crescente2.isOrdenado());
