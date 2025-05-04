@@ -68,7 +68,13 @@ console.log(insertion3.insertionSort()); */
 /* let crescente1 = new Crescente();
 console.log(crescente1);
  */
-let crescente2 = new Crescente([
+/* let crescente2 = new Crescente([
   1, 4, 5, 12, 17, 22, 29, 33, 35, 40, 45, 50, 56, 60, 68, 72, 75, 84, 90, 91,
 ]);
-console.log(crescente2.isOrdenado());
+console.log(crescente2.isOrdenado()); */
+
+//EX5
+let bubbleMelhorado1 = new Crescente([
+  1, 5, 2, 3, 17, 22, 29, 33, 35, 40, 45, 50, 56, 60, 68, 72, 75, 84, 90, 91,
+]);
+console.log(bubbleMelhorado1.bubbleMelhorado());

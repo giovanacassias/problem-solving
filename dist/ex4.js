@@ -19,20 +19,46 @@ class Crescente {
         this.TAM = 20;
         this.arr = arr;
     }
+    //EX4
     isOrdenado() {
         let res = true;
         for (let i = 1; i <= this.TAM; i++) {
             if (this.arr[i - 1] > this.arr[i]) {
-                console.log(`Essa é a ${i} iteração`);
+                //console.log(`Essa é a ${i} iteração`);
                 res = false;
                 break;
             }
-            console.log(`Essa é a ${i} iteração`);
+            //console.log(`Essa é a ${i} iteração`);
         }
         return res;
     }
     sort(arr) {
         return arr.sort((a, b) => a - b);
+    }
+    //EX5
+    bubbleMelhorado() {
+        let arr = this.arr, swap = 1, temp, passada = 1;
+        while (swap != 0) {
+            swap = 0;
+            console.log(`passada externa ${passada}`);
+            for (let j = 1; j <= this.TAM; j++) {
+                console.log(`comparação ${j}`);
+                if (arr[j - 1] > arr[j]) {
+                    temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                    swap++;
+                    console.log(`Uma troca aconteceu entre os elementos ${arr[j]} e ${arr[j - 1]}`);
+                    console.log(`Quantidade de trocas feitas no laço interno: ${swap}`);
+                }
+                else {
+                    console.log("Não houve troca entre os elementos");
+                }
+            }
+            passada++;
+        }
+        console.log(`Algoritmo encerrado pois não houve trocas na última iteração, logo o array está ordenado!`);
+        return arr;
     }
 }
 exports.default = Crescente;

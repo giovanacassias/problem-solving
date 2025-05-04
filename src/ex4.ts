@@ -21,6 +21,7 @@ export default class Crescente {
     this.arr = arr;
   }
 
+  //EX4
   public isOrdenado(): boolean {
     let res: boolean = true;
 
@@ -39,5 +40,36 @@ export default class Crescente {
     return arr.sort((a, b) => a - b);
   }
 
-  public bubbleMelhorado() {}
+  //EX5
+  public bubbleMelhorado(): number[] {
+    let arr: number[] = this.arr,
+      swap: number = 1,
+      temp: number,
+      passada: number = 1;
+
+    while (swap != 0) {
+      swap = 0;
+      console.log(`passada externa ${passada}`);
+      for (let j = 1; j <= this.TAM; j++) {
+        console.log(`comparação ${j}`);
+        if (arr[j - 1] > arr[j]) {
+          temp = arr[j];
+          arr[j] = arr[j - 1];
+          arr[j - 1] = temp;
+          swap++;
+          console.log(
+            `Uma troca aconteceu entre os elementos ${arr[j]} e ${arr[j - 1]}`
+          );
+          console.log(`Quantidade de trocas feitas no laço interno: ${swap}`);
+        } else {
+          console.log("Não houve troca entre os elementos");
+        }
+      }
+      passada++;
+    }
+    console.log(
+      `Algoritmo encerrado pois não houve trocas na última iteração, logo o array está ordenado!`
+    );
+    return arr;
+  }
 }
