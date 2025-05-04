@@ -40,7 +40,7 @@ export default class Crescente {
     return arr.sort((a, b) => a - b);
   }
 
-  //EX5
+  //EXERCÍCIO 5 - BUBBLE MELHORADO
   public bubbleMelhorado(): number[] {
     let arr: number[] = this.arr,
       swap: number = 1,
