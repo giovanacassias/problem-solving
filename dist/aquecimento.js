@@ -17,7 +17,6 @@ class Unique {
           common = arr[1];
         } */
         common = arr[0] === arr[1] ? arr[0] : arr[1] === arr[2] ? arr[1] : arr[1];
-        console.log(`o número em comum é ${common}`);
         for (let i = 0; i < tam; i++) {
             if (arr[i] != common) {
                 console.log(`O número diferente é ${arr[i]} no index ${i}`);

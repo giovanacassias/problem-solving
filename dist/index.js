@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const aquecimento_1 = __importDefault(require("./aquecimento"));
+const ex14_1 = __importDefault(require("./ex14"));
 //EX1
 //ordenar()
 /* let inteiros1 = new Inteiros(2, 4, 6);
@@ -71,13 +71,26 @@ console.log(crescente2.isOrdenado()); */
 ]);
 console.log(bubbleMelhorado1.bubbleMelhorado()); */
 //AQUECIMENTO
-let unique1 = new aquecimento_1.default([2, 1, 1, 1, 1]);
+/* let unique1 = new Unique([2, 1, 1, 1, 1]);
 console.log(unique1.findUnique());
-let unique2 = new aquecimento_1.default([1, 2, 1, 1, 1]);
+
+let unique2 = new Unique([1, 2, 1, 1, 1]);
 console.log(unique2.findUnique());
-let unique3 = new aquecimento_1.default([0, 0, 0.55, 0, 0]);
+
+let unique3 = new Unique([0, 0, 0.55, 0, 0]);
 console.log(unique3.findUnique());
-let unique4 = new aquecimento_1.default([3, 3, 2, 3, 3]);
+
+let unique4 = new Unique([3, 3, 2, 3, 3]);
 console.log(unique4.findUnique());
-let unique5 = new aquecimento_1.default([2, 3, 2, 2, 2]);
-console.log(unique5.findUnique());
+
+let unique5 = new Unique([2, 3, 2, 2, 2]);
+console.log(unique5.findUnique()); */
+//BUSCA BINÁRIA
+let busca1 = new ex14_1.default(100);
+console.log(busca1.buscaBinaria());
+let busca2 = new ex14_1.default(1000);
+console.log(busca2.buscaBinaria());
+let busca3 = new ex14_1.default(10000);
+console.log(busca3.buscaBinaria());
+let busca4 = new ex14_1.default(100000);
+console.log(busca4.buscaBinaria());

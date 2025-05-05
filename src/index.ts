@@ -1,5 +1,6 @@
 import Unique from "./aquecimento";
 import Inteiros from "./ex1";
+import BuscaBinaria from "./ex14";
 import Baralho from "./ex3";
 import Crescente from "./ex4";
 
@@ -81,7 +82,7 @@ console.log(crescente2.isOrdenado()); */
 console.log(bubbleMelhorado1.bubbleMelhorado()); */
 
 //AQUECIMENTO
-let unique1 = new Unique([2, 1, 1, 1, 1]);
+/* let unique1 = new Unique([2, 1, 1, 1, 1]);
 console.log(unique1.findUnique());
 
 let unique2 = new Unique([1, 2, 1, 1, 1]);
@@ -94,4 +95,17 @@ let unique4 = new Unique([3, 3, 2, 3, 3]);
 console.log(unique4.findUnique());
 
 let unique5 = new Unique([2, 3, 2, 2, 2]);
-console.log(unique5.findUnique());
+console.log(unique5.findUnique()); */
+
+//BUSCA BINÁRIA
+let busca1 = new BuscaBinaria(100);
+console.log(busca1.buscaBinaria());
+
+let busca2 = new BuscaBinaria(1000);
+console.log(busca2.buscaBinaria());
+
+let busca3 = new BuscaBinaria(10000);
+console.log(busca3.buscaBinaria());
+
+let busca4 = new BuscaBinaria(100000);
+console.log(busca4.buscaBinaria());
