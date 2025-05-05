@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex14_1 = __importDefault(require("./ex14"));
+const ex9_1 = __importDefault(require("./ex9"));
 //EX1
 //ordenar()
 /* let inteiros1 = new Inteiros(2, 4, 6);
@@ -85,12 +85,20 @@ console.log(unique4.findUnique());
 
 let unique5 = new Unique([2, 3, 2, 2, 2]);
 console.log(unique5.findUnique()); */
-//BUSCA BINÁRIA
-let busca1 = new ex14_1.default(100);
+//EX14 - BUSCA BINÁRIA
+/* let busca1 = new BuscaBinaria(100);
 console.log(busca1.buscaBinaria());
-let busca2 = new ex14_1.default(1000);
+
+let busca2 = new BuscaBinaria(1000);
 console.log(busca2.buscaBinaria());
-let busca3 = new ex14_1.default(10000);
+
+let busca3 = new BuscaBinaria(10000);
 console.log(busca3.buscaBinaria());
-let busca4 = new ex14_1.default(100000);
-console.log(busca4.buscaBinaria());
+
+let busca4 = new BuscaBinaria(100000);
+console.log(busca4.buscaBinaria()); */
+//EX9 - EXTREMIDADE MAIS PRÓXIMA
+/* let extremidade1 = new Extremidade([5, 6, 8, 15, 24, 33, 55, 74, 80, 99]);
+console.log(extremidade1.extremidadeMaisProxima(100)); */
+let extremidade2 = new ex9_1.default([5, 6, 8, 15, 24, 33, 55, 74, 80, 99]);
+console.log(extremidade2.extremidadeMaisProxima(98));
