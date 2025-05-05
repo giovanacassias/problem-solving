@@ -71,9 +71,13 @@ console.log(crescente2.isOrdenado()); */
 ]);
 console.log(bubbleMelhorado1.bubbleMelhorado()); */
 //AQUECIMENTO
-let unique1 = new aquecimento_1.default([1, 2, 1, 1, 1]);
+let unique1 = new aquecimento_1.default([2, 1, 1, 1, 1]);
 console.log(unique1.findUnique());
-let unique2 = new aquecimento_1.default([2, 1, 1, 1, 1]);
+let unique2 = new aquecimento_1.default([1, 2, 1, 1, 1]);
 console.log(unique2.findUnique());
 let unique3 = new aquecimento_1.default([0, 0, 0.55, 0, 0]);
 console.log(unique3.findUnique());
+let unique4 = new aquecimento_1.default([3, 3, 2, 3, 3]);
+console.log(unique4.findUnique());
+let unique5 = new aquecimento_1.default([2, 3, 2, 2, 2]);
+console.log(unique5.findUnique());

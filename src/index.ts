@@ -89,3 +89,9 @@ console.log(unique2.findUnique());
 
 let unique3 = new Unique([0, 0, 0.55, 0, 0]);
 console.log(unique3.findUnique());
+
+let unique4 = new Unique([3, 3, 2, 3, 3]);
+console.log(unique4.findUnique());
+
+let unique5 = new Unique([2, 3, 2, 2, 2]);
+console.log(unique5.findUnique());
