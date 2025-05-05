@@ -35,7 +35,7 @@ class Crescente {
     sort(arr) {
         return arr.sort((a, b) => a - b);
     }
-    //EX5
+    //EXERCÍCIO 5 - BUBBLE MELHORADO
     bubbleMelhorado() {
         let arr = this.arr, swap = 1, temp, passada = 1;
         while (swap != 0) {

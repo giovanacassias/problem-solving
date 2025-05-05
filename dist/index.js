@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex4_1 = __importDefault(require("./ex4"));
+const aquecimento_1 = __importDefault(require("./aquecimento"));
 //EX1
 //ordenar()
 /* let inteiros1 = new Inteiros(2, 4, 6);
@@ -66,7 +66,14 @@ console.log(crescente1);
 ]);
 console.log(crescente2.isOrdenado()); */
 //EX5
-let bubbleMelhorado1 = new ex4_1.default([
-    1, 5, 2, 3, 17, 22, 29, 33, 35, 40, 45, 50, 56, 60, 68, 72, 75, 84, 90, 91,
+/* let bubbleMelhorado1 = new Crescente([
+  1, 5, 2, 3, 17, 22, 29, 33, 35, 40, 45, 50, 56, 60, 68, 72, 75, 84, 90, 91,
 ]);
-console.log(bubbleMelhorado1.bubbleMelhorado());
+console.log(bubbleMelhorado1.bubbleMelhorado()); */
+//AQUECIMENTO
+let unique1 = new aquecimento_1.default([1, 2, 1, 1, 1]);
+console.log(unique1.findUnique());
+let unique2 = new aquecimento_1.default([2, 1, 1, 1, 1]);
+console.log(unique2.findUnique());
+let unique3 = new aquecimento_1.default([0, 0, 0.55, 0, 0]);
+console.log(unique3.findUnique());

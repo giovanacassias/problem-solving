@@ -1,3 +1,4 @@
+import Unique from "./aquecimento";
 import Inteiros from "./ex1";
 import Baralho from "./ex3";
 import Crescente from "./ex4";
@@ -74,7 +75,17 @@ console.log(crescente1);
 console.log(crescente2.isOrdenado()); */
 
 //EX5
-let bubbleMelhorado1 = new Crescente([
+/* let bubbleMelhorado1 = new Crescente([
   1, 5, 2, 3, 17, 22, 29, 33, 35, 40, 45, 50, 56, 60, 68, 72, 75, 84, 90, 91,
 ]);
-console.log(bubbleMelhorado1.bubbleMelhorado());
+console.log(bubbleMelhorado1.bubbleMelhorado()); */
+
+//AQUECIMENTO
+let unique1 = new Unique([2, 1, 1, 1, 1]);
+console.log(unique1.findUnique());
+
+let unique2 = new Unique([1, 2, 1, 1, 1]);
+console.log(unique2.findUnique());
+
+let unique3 = new Unique([0, 0, 0.55, 0, 0]);
+console.log(unique3.findUnique());
