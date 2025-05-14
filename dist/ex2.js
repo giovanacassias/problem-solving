@@ -4,13 +4,14 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 class ListaInteiros {
-    constructor(n) {
+    /*   public constructor(n: number) {
+      for (let i = 0; i < n; i++) {
+        this.arr.push(Math.floor(Math.random() * 51));
+      }
+    } */
+    constructor() {
         this.arr = [];
-        this.aux = "";
-        for (let i = 0; i < n; i++) {
-            this.arr.push(Math.floor(Math.random() * 51));
-        }
-        console.log(this.arr);
+        this.arr = [9, 28, 32, 8, 28, 18, 5, 37, 16, 46];
     }
     //EX2
     toString() {
@@ -31,13 +32,11 @@ class ListaInteiros {
     //EX3
     removeLess(n) {
         let arr = this.arr, len = this.arr.length;
-        console.log(`Array original: ${arr}`);
         for (let i = len; i >= 0; i--) {
             if (arr[i] < n) {
                 arr.splice(i, 1);
             }
         }
-        console.log(`Array modificado: ${arr}`);
         return arr;
     }
     //COM FILTER()
@@ -48,13 +47,61 @@ class ListaInteiros {
     //EX4
     removeMultiples(n) {
         let arr = [4, 6, 8, 11, 15, 20, 23, 9, 10, 25];
-        console.log(`Arrey original: ${arr}`);
         for (let i = arr.length - 1; i >= 0; i--) {
             if ((i + 1) % n == 0) {
                 arr.splice(i, 1);
             }
         }
-        console.log(`Arrey modificado: ${arr}`);
+    }
+    maisProximoMedia() {
+        let sum = this.arr.reduce((a, b) => a + b), average = Math.floor(sum / this.arr.length), closest = this.findDifference(0, average), arr = [], finalIndex = 0;
+        console.log(`Array original ${this.arr}`);
+        console.log(`Soma dos elementos: ${sum}`);
+        console.log(`Média dos elementos: ${average}`);
+        console.log(`Primeiro valor mais próximo da média: ${closest}`);
+        for (let i = 0; i < this.arr.length; i++) {
+            arr.push(this.findDifference(i, average));
+        }
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < closest) {
+                closest = arr[i];
+                console.log(closest);
+            }
+        }
+        finalIndex = arr.indexOf(closest);
+        console.log(`Array da diferença: ${arr}`);
+        console.log(`O item mais próximo da média é ${this.arr[finalIndex]}`);
+    }
+    findDifference(index, average) {
+        return Math.floor(Math.abs(this.arr[index] - average));
+    }
+    reduceLength(n) {
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        console.log(`Array original ${arr}`);
+        if (n > arr.length) {
+            console.log(`Quantidade de elementos que deseja excluir é maior que a quantidade de itens no array!`);
+            return;
+        }
+        else {
+            arr.splice(0, arr.length - n);
+        }
+        console.log(`Array modificado ${arr}`);
+    }
+    fatia(inicio, fim) { }
+    amplitude() {
+        let arr = this.arr, maior = arr[0], menor = arr[0], diferenca = 0;
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < menor) {
+                menor = arr[i];
+            }
+            if (arr[i] > maior) {
+                maior = arr[i];
+            }
+        }
+        diferenca = maior - menor;
+        console.log(`O array é ${arr}`);
+        console.log(`O menor elemento é ${menor} e o maior é ${maior}`);
+        console.log(`A diferença entre o maior e o menor é ${diferenca}`);
     }
 }
 exports.default = ListaInteiros;
