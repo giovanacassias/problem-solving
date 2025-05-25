@@ -134,5 +134,20 @@ export default class ListaInteiros {
     console.log(`A diferença entre o maior e o menor é ${diferenca}`);
   }
 
-  public josephus(): void {}
+  public josephusSurvivor(): void {
+    let arr: number[] = [10, 15, 20, 25, 30, 35],
+      num: number = this.josephusNewIndex(arr),
+      counter: number = num;
+
+    while (arr.length != 1) {
+      arr.splice(arr[num], 1); //excluindo
+    }
+
+    console.log(arr);
+    console.log(num);
+  }
+
+  private josephusNewIndex(arr: number[]): number {
+    return Math.floor(Math.random() * arr.length);
+  }
 }

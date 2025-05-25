@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex2_1 = __importDefault(require("./ex2"));
+const prova_1 = __importDefault(require("./prova"));
 //EX2
 //let teste = new ListaInteiros(5);
 //console.log(teste.toString());
 //EX3
-let teste2 = new ex2_1.default();
+//let teste2 = new ListaInteiros();
 //console.log(teste2.removeLess(10));
 //console.log(teste2.removeLessFilter(10));
 //EX4
@@ -18,4 +18,9 @@ let teste2 = new ex2_1.default();
 //EX6
 //teste2.reduceLength(9);
 //EX8
-teste2.amplitude();
+//teste2.amplitude();
+//EX10
+//teste2.josephus();
+//PROVA
+let domino = new prova_1.default(1, 6);
+console.log(domino.playGame());
