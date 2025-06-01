@@ -16,17 +16,12 @@ class Graph {
     }
     getNotNeighbours(node) {
         let keys = this.adjacentList.keys(), neighbours = this.getNeighbours(node), notNeighbours = [];
-        console.log(`As chaves são: ${keys}`);
         for (const key of keys) {
             if (!neighbours.has(key) && key != node) {
                 notNeighbours.push(key);
             }
         }
         return notNeighbours;
-    }
-    fromMapToArray() {
-        let myList = this.adjacentList;
-        myList.forEach();
     }
     hasEdge(node1, node2) {
         return this.adjacentList.get(node1).has(node2);
