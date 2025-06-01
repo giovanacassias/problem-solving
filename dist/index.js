@@ -3,12 +3,30 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const ex3_1 = __importDefault(require("./ex3"));
+const exemploProva_1 = __importDefault(require("./exemploProva"));
 //EX3
-let g = new ex3_1.default();
+/* let g = new AdjacencyList();
 console.log(g.addNode("A"));
 console.log(g.addNode("B"));
 console.log(g.addNode("C"));
 console.log(g.addEdge("B", "C"));
 console.log(g.hasEdge("A", "B"));
-console.log(g.hasEdge("C", "B"));
+console.log(g.hasEdge("C", "B")); */
+//exemploProva.ts
+let g = new exemploProva_1.default();
+//console.log(g);
+console.log(g.addNode("A"));
+console.log(g.addNode("B"));
+console.log(g.addNode("C"));
+console.log(g.addNode("D"));
+console.log(g.addNode("E"));
+console.log(g.addNode("F"));
+console.log(g.addEdge("A", "B"));
+console.log(g.addEdge("A", "C"));
+console.log(g.addEdge("C", "B"));
+console.log(g.addEdge("D", "E"));
+console.log(g.addEdge("D", "F"));
+console.log(g.addEdge("F", "B"));
+//console.log(g);
+console.log(g.getNeighbours("A"));
+console.log(g.getNotNeighbours("A"));
