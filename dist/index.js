@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const exemploProva2_1 = __importDefault(require("./exemploProva2"));
+const exemploProva3_1 = __importDefault(require("./exemploProva3"));
 //EX3
 /* let g = new AdjacencyList();
 console.log(g.addNode("A"));
@@ -31,7 +31,7 @@ console.log(g.addEdge("F", "B"));
 console.log(g.getNeighbours("A"));
 console.log(g.getNotNeighbours("A")); */
 //exemploProva2.ts
-let gg = new exemploProva2_1.default();
+/* let gg = new AdjacentListArray();
 console.log(gg);
 console.log(gg.addNode("A"));
 console.log(gg.addNode("B"));
@@ -47,4 +47,19 @@ console.log(gg);
 console.log(gg.isEdge("A", "B"));
 console.log(gg.isEdge("A", "C"));
 console.log(gg.getNeighbours("A"));
-console.log(gg.getNotNeighbours("A"));
+console.log(gg.getNotNeighbours("A")); */
+//exemploProva3
+let graph = new exemploProva3_1.default();
+console.log(graph.addNode("A"));
+console.log(graph.addNode("B"));
+console.log(graph.addNode("C"));
+console.log(graph.addNode("D"));
+console.log(graph.addNode("E"));
+console.log(graph.addNode("F"));
+console.log(graph);
+console.log(graph.addEdge(graph.nodes[0], graph.nodes[1]));
+console.log(graph.addEdge(graph.nodes[0], graph.nodes[2]));
+console.log(graph.addEdge(graph.nodes[0], graph.nodes[5]));
+console.log(graph.getNodes());
+console.log(graph.getNeighbours(graph.nodes[0]));
+console.log(graph.getNotNeighbours(graph.nodes[0]));

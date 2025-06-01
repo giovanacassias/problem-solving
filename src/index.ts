@@ -1,6 +1,7 @@
 import AdjacencyList2 from "./ex3";
 import AdjacencyList from "./exemploProva";
 import AdjacentListArray from "./exemploProva2";
+import Graph from "./exemploProva3";
 
 //EX3
 /* let g = new AdjacencyList();
@@ -31,7 +32,7 @@ console.log(g.getNeighbours("A"));
 console.log(g.getNotNeighbours("A")); */
 
 //exemploProva2.ts
-let gg = new AdjacentListArray();
+/* let gg = new AdjacentListArray();
 console.log(gg);
 console.log(gg.addNode("A"));
 console.log(gg.addNode("B"));
@@ -47,4 +48,20 @@ console.log(gg);
 console.log(gg.isEdge("A", "B"));
 console.log(gg.isEdge("A", "C"));
 console.log(gg.getNeighbours("A"));
-console.log(gg.getNotNeighbours("A"));
+console.log(gg.getNotNeighbours("A")); */
+
+//exemploProva3
+let graph = new Graph();
+console.log(graph.addNode("A"));
+console.log(graph.addNode("B"));
+console.log(graph.addNode("C"));
+console.log(graph.addNode("D"));
+console.log(graph.addNode("E"));
+console.log(graph.addNode("F"));
+console.log(graph);
+console.log(graph.addEdge(graph.nodes[0], graph.nodes[1]));
+console.log(graph.addEdge(graph.nodes[0], graph.nodes[2]));
+console.log(graph.addEdge(graph.nodes[0], graph.nodes[5]));
+console.log(graph.getNodes());
+console.log(graph.getNeighbours(graph.nodes[0]));
+console.log(graph.getNotNeighbours(graph.nodes[0]));
